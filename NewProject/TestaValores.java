@@ -7,7 +7,7 @@ public class TestaValores {
         conta.setNumero(39);
         System.out.println(conta.getAgencia());
         
-        Conta conta2=new Conta(1345, 56773);
+        // Conta conta2=new Conta(1345, 56773);
         System.out.println(Conta.getTotal());
     }
 }
