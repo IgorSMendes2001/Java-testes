@@ -8,6 +8,8 @@ public class TesteContas {
         cp.deposita(2465.00);
         cp.transfere(cc, 1200.00);
         System.out.println(cc.getSaldo());   
-        
+        System.out.println(cp.getSaldo());
+        cc.saca(200.00);
+        System.out.println(cc.getSaldo());
     }
 }

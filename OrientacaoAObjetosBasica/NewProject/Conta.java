@@ -1,4 +1,4 @@
-package NewProject;
+package OrientacaoAObjetosBasica.NewProject;
 
 public class Conta {
     private int numero;

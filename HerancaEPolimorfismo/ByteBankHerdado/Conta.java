@@ -1,10 +1,10 @@
 package HerancaEPolimorfismo.ByteBankHerdado;
 
-public class Conta {
+public abstract class Conta {
     private int numero;
     private int agencia;
     private Cliente titular;
-    private double saldo;
+    protected double saldo;
     private static int total;//método estático usado como variável global de objeto
    //método construtor que recebe duas variávei na qual ele tem que pedir do usuário antes de instanciar o objeto
  
@@ -39,10 +39,8 @@ public class Conta {
         }
     }
    
-    public void deposita(double valor){
-        this.saldo+=valor;
-        System.out.println("Depósito realizado com sucesso!");
-    }
+    public abstract void deposita(double valor);
+
      // void transfere(Conta destino,double valor){
     //     this.saldo=this.saldo-valor;
     //     destino.saldo=destino.saldo+valor;

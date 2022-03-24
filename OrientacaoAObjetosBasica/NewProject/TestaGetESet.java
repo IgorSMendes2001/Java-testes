@@ -1,4 +1,4 @@
-package NewProject;
+package OrientacaoAObjetosBasica.NewProject;
 
 public class TestaGetESet {
     public static void main(String[] args) {

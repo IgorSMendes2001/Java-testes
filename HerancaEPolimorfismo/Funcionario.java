@@ -1,17 +1,13 @@
 package HerancaEPolimorfismo;
-
-public class Funcionario {
+//não pode instanciar objetos da classe abstrata
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario; // protected:publico para as classes filhas mas privado para as demais classes
 
-    public Funcionario(){
-
-    }
-    
-    public double getBonificacao(){
-        return this.salario * 0.1;
-    }
+    //métodos abstratos não tem corpo
+    //servem para forçar que as classes filhas implementem seus próprios métodos nesse caso o getBonificacao() 
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;

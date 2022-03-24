@@ -1,4 +1,4 @@
-package NewProject;
+package OrientacaoAObjetosBasica.NewProject;
 public class Cliente{
     //atributos privado no qual não podem ser alterados pelo usuário a não ser através do set
     private String nome;
