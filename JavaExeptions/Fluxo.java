@@ -1,5 +1,5 @@
 package JavaExeptions;
-
+//Utiliza da ED de pilhas FiFo, com o estilo de método estático, chamando cada método posterior antes de finalizar o método main
 public class Fluxo {
     public static void main(String[] args) {
         System.out.println("Ini do main");
