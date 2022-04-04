@@ -1,7 +1,7 @@
 package JavaExeptions;
 
 public class Conta {
-    public void deposita(){
-
-    }
+   void deposita() throws MinhaException{
+       
+   }
 }
