@@ -1,6 +1,8 @@
 package HerancaEPolimorfismo.ByteBankHerdado;
+import HerancaEPolimorfismo.ByteBankHerdado.Conta;
+import HerancaEPolimorfismo.ByteBankHerdado.Tributavel;
 //new ContaCorrente()
-public class ContaCorrente extends Conta{//Herda atributos e métodos mas nunca os construtores
+public class ContaCorrente extends Conta implements Tributavel{//Herda atributos e métodos mas nunca os construtores
     public ContaCorrente(int agencia,int numero){
        super(agencia,numero);
     }
@@ -16,7 +18,11 @@ public class ContaCorrente extends Conta{//Herda atributos e métodos mas nunca 
     }
     @Override
     public boolean transfere(Conta destino, double valor) {
-        // TODO Auto-generated method stub
         return super.transfere(destino, valor);
     }
+    @Override
+	public double getValorImposto() {	
+		return super.saldo * 0.01;
+	}
+	
 }
