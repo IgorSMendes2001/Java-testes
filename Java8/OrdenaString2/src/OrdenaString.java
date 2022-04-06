@@ -25,7 +25,9 @@ public class OrdenaString {
         //             return 1;
         //         return 0;
         //     });
-        palavras.sort((s1,s2)->  Integer.compare(s1.length(), s2.length()));
+        // palavras.sort((s1,s2)->  Integer.compare(s1.length(), s2.length()));
+        palavras.sort(Comparator.comparing(s->s.length()));
+
         System.out.println(palavras);
         //For Each antes do Java 8
         // for (String p : palavras) {
@@ -35,11 +37,11 @@ public class OrdenaString {
         Consumer<String> impressor=s->System.out.println(s); // Lambdas servem para simplificar funções e evitar códigos complexos para classes com poucos métodos porém necessita ser ligado a uma interface funcional
         palavras.forEach(impressor);
         
-        palavras.forEach((String t)-> {
-                System.out.println(t);                
-            }
+        // palavras.forEach((String t)-> {
+        //         System.out.println(t);                
+        //     }
             
-        );//Nova forma de iterar elementos
+        // );//Nova forma de iterar elementos
 
         new Consumer<String>() {
 
